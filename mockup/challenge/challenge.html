@@ -34,9 +34,7 @@
         </div>
       </div>
 
-      <!-- Main Section -->
       <div class="flex flex-grow overflow-hidden">
-        <!-- Left Column (Scenario) -->
         <div
           class="chatboxl flex flex-col w-72 bg-gray-800 p-4 overflow-y-auto"
         >
@@ -102,7 +100,6 @@
     </div>
 
     <script>
-      // JavaScript for handling chat interactions
       const chatContainer = document.getElementById("chat-container");
       const chatInput = document.getElementById("chat-input");
       const sendButton = document.getElementById("send-button");
@@ -110,16 +107,13 @@
       sendButton.addEventListener("click", () => {
         const message = chatInput.value.trim();
         if (message) {
-          // Add user's message to the chat
           const userMessage = document.createElement("div");
           userMessage.className = "message text-sm mb-4";
           userMessage.innerHTML = `<span class="font-bold text-blue-400">You:</span> ${message}`;
           chatContainer.appendChild(userMessage);
 
-          // Clear the input box
           chatInput.value = "";
 
-          // Scroll to the latest message
           chatContainer.scrollTop = chatContainer.scrollHeight;
 
           const systemMessage = document.createElement("div");
