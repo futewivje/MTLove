@@ -38,10 +38,10 @@
       <div class="flex flex-grow overflow-hidden">
         <!-- Left Column (Scenario) -->
         <div
-          class="chatboxl flex flex-col w-1/4 bg-gray-800 p-4 overflow-y-auto"
+          class="chatboxl flex flex-col w-72 bg-gray-800 p-4 overflow-y-auto"
         >
           <div class="chatltitle text-lg font-bold mb-4">Family vs Partner</div>
-          <div class="explain text-sm mb-6">
+          <div class="explain text-lg mb-6">
             You’re on a peaceful boat ride, enjoying the sun and the calm waves,
             when suddenly—SPLASH!—both your mom and your girlfriend fall into
             the water at the same time! Your mom, a seasoned veteran of guilt
@@ -60,14 +60,11 @@
           </div>
         </div>
 
-        <!-- Right Column (Chat Section) -->
         <div class="chatboxr flex flex-col flex-grow bg-gray-900 p-4">
-          <!-- Chat Messages -->
           <div
             id="chat-container"
-            class="flex-grow overflow-y-auto bg-gray-800 p-4 rounded-lg"
+            class="flex-grow overflow-y-auto bg-gray-700 p-4 rounded-lg"
           >
-            <!-- Placeholder Messages -->
             <div class="message text-sm mb-4">
               <span class="font-bold text-green-400">System:</span> Welcome to
               the chat! You are trying to persuade your girlfriend to save your
@@ -77,12 +74,15 @@
               <span class="font-bold text-blue-400">You:</span> Start
             </div>
             <div class="message text-sm mb-4">
-              <span class="font-bold text-green-400">Your girlfriend:</span>
+              <span class="font-bold text-pink-400">Your girlfriend:</span>
               What are you doing? Come and save me!
+            </div>
+            <div class="message text-sm mb-4">
+              <span class="font-bold text-red-400">Your mom:</span>
+              Son, save her first.
             </div>
           </div>
 
-          <!-- Input Section -->
           <div class="mt-4 flex items-center">
             <input
               type="text"
